@@ -1,0 +1,129 @@
+{
+  "角色名": "瑞奇",
+  "特征": "25岁黑色短发的男性",
+  
+  "角色名2": "",
+  "特征2": "",
+  
+  "角色名3": "",
+  "特征3": "",
+  
+  "角色名4": "",
+  "特征4": "",
+  
+  "角色名5": "",
+  "特征5": "",
+  
+  "角色名6": "",
+  "特征6": "",
+  
+  "角色名7": "",
+  "特征7": "",
+  
+  "角色名8": "",
+  "特征8": "",
+  
+  "角色名9": "男子",
+  "特征9": "100岁的面容枯槁的男性老人",
+  
+  "角色名10": "主人",
+  "特征10": "30岁年轻富有的棕色长发男子",
+  
+  "//": "下面这行控制语句分割的长短，数字越小句子越短（数值可以为0，则完全按照标点符号进行分句）",
+  "句子最小长度限制": 50, 
+
+  "//": "下面这行自定义ChatGPT的引导词用于产生Stable Diffusion的Prompt",
+  "引导词": "Task: I will tell you the theme of the prompt to generate in natural language, and your task is to imagine a complete picture based on this theme, then transform it into a detailed, high-quality prompt, so that Stable Diffusion can generate high-quality images. Prompt concept: A prompt is used to describe images, composed of common, often used words, using English half-width ',' as a separator. Each word or phrase separated by ',' is known as a tag. So a prompt consists of a series of tags separated by ','. Below, I will explain the steps to generate a prompt, where the prompt can be used to describe characters, scenery, objects or abstract digital art drawings. Prompt requirements: The prompt should contain elements such as the main subject of the image, texture, additional details, image quality, artistic style, color tone, lighting, etc. Attention, the prompt you output cannot be split into sections, for example, descriptions like 'medium:','Main subject:','Keywords:','Prompt:','texture:','additional details:','image quality:','artistic style:','color tone:','lighting:','tags:' are not needed and it cannot contain ':' or '.'! Main subject: Briefly describe the main subject of the picture in English, such as 'A girl in a garden'. This encapsulates the core content of the image (the subject can be people, things, objects, landscapes). This part is generated based on the theme I give you each time. You can add more reasonable details related to the theme. For character themes, you must describe the character's eyes, nose, and lips, for example 'beautiful detailed eyes, beautiful detailed lips, extremely detailed eyes and face, long eyelashes', to avoid Stable Diffusion randomly generating deformed facial features, this is very important. The theme I provide is:",
+  
+  "//": "下面这行填写云端Stable Diffusion的IP地址",
+  "cloud_address": "",
+  
+  "//": "下面这行填写通用正面提示词（包括时代背景、漫画风格、整体氛围等）和Lora，格式与WebUI一致",
+  "more_details": "<lora:add_detail:1>,modern society,American comics style,Shadowy and ominous style,HDR,4K",
+  
+  "//": "下面填写绘图参数",
+  "data": {
+    "//": "高分辨率放大，true=启用，false=关闭",
+    "enable_hr": true,
+    "//": "重绘幅度",
+    "denoising_strength": 0.4,
+    "//": "图片宽度",
+    "firstphase_width": 960,
+    "//": "图片高度",
+    "firstphase_height": 540,
+    "//": "图片高分辨率放大倍数",
+    "hr_scale": 2,
+    "//": "高分辨率放大渲染器",
+    "hr_upscaler": "R-ESRGAN 4x+ Anime6B",
+    "//": "高分辨率放大迭代次数",
+    "hr_second_pass_steps": 10,
+    "//": "绘图渲染器",
+    "sampler_name": "DPM adaptive",
+    "//": "绘图数量",
+    "batch_size": 1,
+    "//": "绘图迭代次数",
+    "steps": 150,
+    "//": "引导词关联性",
+    "cfg_scale": 7,
+    "//": "面部修复，true=启用，false=关闭",
+    "restore_faces": false,
+    "//": "负面提示词",
+    "negative_prompt": "badhandv4,ng_deepnegative_v1_64t,worst quality,low quality,normal quality,lowers,monochrome,grayscales,skin spots,acnes,skin blemishes,age spot,6 more fingers on one hand,deformity,bad legs,error legs,bad feet,malformed limbs,extra limbs,ugly,poorly drawn hands,poorly drawn feet,poorly drawn face,text,mutilated,extra fingers,mutated hands,mutation,bad anatomy,cloned face,disfigured,fused fingers"
+  },
+  
+  
+  "//": "以下为免费edge_tts配音参数",
+  "//": "配音人",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  
+  "//": "语速",
+  "rate": "+30%",
+  
+  "//": "声调",
+  "volume": "+0%",
+ 
+ 
+  "//": "以下为收费微软TTS配音参数，官方参数具体查询：https://learn.microsoft.com/zh-cn/azure/cognitive-services/speech-service/language-support?tabs=tts",  
+  "//": "密钥",
+  "subscription": "",
+  
+  "//": "服务器区域",  
+  "region": "eastasia",
+  
+  "//": "配音人",
+  "voice_name": "zh-CN-YunyeNeural",
+  
+  "//": "风格",
+  "style": "embarrassed",
+  
+  "//": "角色",
+  "role": "OlderAdultMale",
+  
+  "//": "语速",
+  "prosody_rate": "+0%",
+  
+  "//": "声调",
+  "prosody_pitch": "+0st",
+  
+  "//": "音量",
+  "prosody_volume": "+0%",
+  
+  "//": "强调程度", 
+  "emphasis_level": "none",
+  
+  "//": "风格程度",  
+  "style_degree": "1",
+ 
+ 
+  "//": "视频帧数",
+  "fps": 60,
+  
+  "//": "毛玻璃边框，true=启用，false=关闭",
+  "enlarge_background": true,
+  
+  "//": "图片切换特效，true=启用，false=关闭",
+  "enable_effect": true,
+  
+  "//": "图片切换特效样式，fade=淡入淡出,slide=滑动, rotate=旋转, scroll=滚动, flip_horizontal=水平翻转, flip_vertical=垂直翻转",
+  "effect_type": "fade"
+}
