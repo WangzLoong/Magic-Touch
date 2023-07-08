@@ -130,7 +130,7 @@ def process_text_sentences(workbook, input_file_path, output_file_path, trigger,
 def main():
     config = load_config()
     print("软件作者：西装革律")
-    print("禁止商用、倒卖、反向编译，违者必究！")
+    print("禁止倒卖，违者必究！")
     print("交流群：797579852")  
     role_name = config.get('角色名', '未指定角色名')
     feature = config.get('特征', '未指定特征')
