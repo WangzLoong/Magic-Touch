@@ -74,7 +74,7 @@ async def convert_text_to_audio(text, language, output_path, row_index, config_f
 
 async def process_text_files(input_file, output_dir, language, config_file):
     print("软件作者：西装革律")
-    print("禁止商用、倒卖、反向编译，违者必究！")
+    print("禁止倒卖，违者必究！")
     print("交流群：797579852")  
     
     wb = openpyxl.load_workbook(input_file)
