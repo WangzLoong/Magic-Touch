@@ -52,13 +52,6 @@ print("交流群：797579852")
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
-env_dir = os.path.join(parent_dir, 'env')
-
-env_image_magick_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'env', 'ImageMagick'))
-os.environ["MAGICK_HOME"] = env_image_magick_dir
-os.environ["PATH"] += os.pathsep + os.path.join(env_image_magick_dir, 'bin')
-
-os.add_dll_directory(env_dir)
 
 config = get_config()
 
